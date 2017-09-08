@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>FIND YOUR BEER</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src='build/main.bundle.js'></script>
+	<script src='js/getbeer.js'></script>
+	<style>
+	
+	body {
+    background-color: lightblue;
+}
+	button {
+	background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+	}
+	
+	input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+		.test{
+			width: 100px
+		}
+	
+		</style>
+</head>
+<body>
+	<h1>FIND YOUR BEER</h1>
+	<br>
+	<br>
+	<input id="find" type="text"  class="test" placeholder="Name">
+	<br><br><input id="find2" type="text"  class="test" placeholder="Yeast">
+	<br><br><button type="button" class="btn btn-info" onclick="findBeer((document.getElementById('find').value),(document.getElementById('find2').value))">Find</button>
+	<br>result :
+	<br><div font-size: 16px; id="num"></div>
+		<table id="beers">
+	</table>
+
+
+
+</body>
+
+
+</html>
